@@ -5,8 +5,10 @@
     <title>Git Guide</title>
     <link rel="stylesheet" href="style.css" />
   </head>
-  <div></div>
   <body>
+    <header>
+      <h1>Git</h1>
+    </header>
     <div id="box-holder">
       <div class="box">
         <h2>What is Git?</h2>
@@ -16,13 +18,15 @@
           changes, branch, merge and compare past versions of your repository on
           Git websites such as GitHub or GitLab.
         </p>
-        <button
-          type="button"
-          onclick="window.location.href"
-          ="https://www.atlassian.com/git/tutorials/what-is-git"
-        >
-          More Info
-        </button>
+        <div class="link">
+          <button
+            type="button"
+            onclick='window.location.href
+            ="https://www.atlassian.com/git/tutorials/what-is-git"'
+          >
+            More Info
+          </button>
+        </div>
       </div>
       <div class="box">
         <h2>Why use Git?</h2>
@@ -33,27 +37,38 @@
           versions should something go wrong. The convenience of all that in one
           tool is unparalelled.
         </p>
-        <button
-          type="button"
-          onclick="window.location.href"
-          ="https://www.atlassian.com/git/tutorials/why-git"
-        >
-          More Info
-        </button>
+        <div class="link">
+          <button
+            type="button"
+            onclick='window.location.href
+            ="https://www.atlassian.com/git/tutorials/why-git"'
+          >
+            More Info
+          </button>
+        </div>
       </div>
       <div class="box">
         <h2>How to use Git?</h2>
         <p>
-          To push code up to Github you first need to start a new repository. Open up a terminal, go to the project folder
-          and start a git repository by using the command <code>git init</code>. Use the command <code>git add .</code>
+          To push code up to GitHub you first need to start a new repository.
+          Open up a terminal, go to the project folder and start a git
+          repository by using the command <code>git init</code>. Use the command
+          <code>git add .</code> the you can 'commit' it by using
+          <code>git commit -m "Your message about the commit"</code>. After you
+          have your files commited you should then create a new repository in
+          GitHub copy the link to your repository then go back to the terminal
+          and do <code>git remote add origin (link from GitHub)</code>. Finally
+          do <code>git push origin master</code>.
         </p>
-        <button
-          type="button"
-          onclick="window.location.href"
-          ="https://product.hubspot.com/blog/git-and-github-tutorial-for-beginners"
-        >
-          More Info
-        </button>
+        <div class="link">
+          <button
+            type="button"
+            onclick='window.location.href
+            ="https://product.hubspot.com/blog/git-and-github-tutorial-for-beginners"'
+          >
+            More Info
+          </button>
+        </div>
       </div>
     </div>
   </body>

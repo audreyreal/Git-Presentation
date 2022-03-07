@@ -1,3 +1,9 @@
+html, body {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  overflow: hidden;
+}
 html {
   font-size: 62.5%;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
@@ -7,23 +13,23 @@ html {
 body {
   font-size: 1.8rem;
   line-height: 1.618;
-  max-width: 100em;
   margin: auto;
   color: #414141;
   background-color: #ececec;
-  padding: 80px;
 }
 
 #box-holder {
   display: flex;
   gap: 25px;
   justify-content: center;
+  max-height: 650px;
 }
 
 .box {
   border: black solid 2px;
   border-radius: 5px;
   padding: 40px;
+  padding-bottom: 100px;
   width: 400px;
 }
 
@@ -34,17 +40,15 @@ code {
 }
 
 button {
-  margin: auto;
   display: inline-block;
+  position: absolute;
+  bottom: 10;
   padding: 10px 20px;
   text-align: center;
   background-color: #1d7484;
   color: #f9f9f9;
-  border-radius: 1px;
-  border: 1px solid #1d7484;
-  cursor: pointer;
-  box-sizing: border-box;
   border-radius: 10px;
+  border: 1px solid #1d7484;
 }
 
 button:hover {
@@ -52,4 +56,18 @@ button:hover {
   border-color: #982c61;
   color: #f9f9f9;
   outline: 0;
+}
+
+header {
+  background-color: #1d7484;
+	display: inline-block;
+	width: 100%;
+	padding: 5px;
+  margin-bottom: 50px;
+}
+
+header h1 {
+	display: inline;
+	padding-left: 30px;
+	color: #f9f9f9;
 }
